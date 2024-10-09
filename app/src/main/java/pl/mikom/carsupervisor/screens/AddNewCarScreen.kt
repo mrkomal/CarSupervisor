@@ -27,6 +27,9 @@ fun AddNewCarScreen(onBackClicked: () -> Unit) {
     Column {
         Text(text = "Add car")
         Button(onClick = onBackClicked) {
+            Text(text = "Submit")
+        }
+        Button(onClick = onBackClicked) {
             Text(text = "Back")
         }
     }
