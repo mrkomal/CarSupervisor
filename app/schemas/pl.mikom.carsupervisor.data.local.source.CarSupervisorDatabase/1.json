@@ -2,10 +2,10 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "fd92c1d7f1064b1fb692201c431e4e37",
+    "identityHash": "f2f1bc0bf122945dc14c0cac7da4724c",
     "entities": [
       {
-        "tableName": "CarEntity",
+        "tableName": "car",
         "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `registration` TEXT NOT NULL, PRIMARY KEY(`id`))",
         "fields": [
           {
@@ -34,7 +34,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fd92c1d7f1064b1fb692201c431e4e37')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f2f1bc0bf122945dc14c0cac7da4724c')"
     ]
   }
 }

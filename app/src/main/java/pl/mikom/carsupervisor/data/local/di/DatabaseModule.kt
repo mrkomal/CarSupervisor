@@ -23,5 +23,9 @@ interface DatabaseModule {
             CarSupervisorDatabase::class.java,
             CarSupervisorDatabase.DB_NAME
         ).build()
+
+        @Singleton
+        @Provides
+        fun provideCarApi(database: CarSupervisorDatabase) = database.carDao()
     }
 }

@@ -14,6 +14,8 @@ import pl.mikom.carsupervisor.data.local.source.CarSupervisorDatabase.Companion.
 )
 abstract class CarSupervisorDatabase : RoomDatabase() {
 
+    abstract fun carDao(): CarDao
+
     companion object {
 
         const val DB_VERSION = 1

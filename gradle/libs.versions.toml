@@ -2,7 +2,7 @@
 agp = "8.6.1"
 kotlin = "1.9.20"
 coreKtx = "1.13.1"
-Update tesjunitVersion = "4.13.2"
+junitVersion = "4.13.2"
 junitAndroidVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.6"
@@ -15,6 +15,7 @@ ksp = "1.9.20-1.0.13"
 roomVersion = "2.6.1"
 coroutinesVersion = "1.8.0"
 archCoreTestingVersion = "2.2.0"
+kotestVersion = "5.9.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,7 @@ room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVers
 kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinesVersion" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVersion" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesVersion" }
+kotest-assertions-core = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotestVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
